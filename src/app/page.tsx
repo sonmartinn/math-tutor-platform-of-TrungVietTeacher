@@ -6,7 +6,8 @@ import {
   Star,
   Trophy,
   Users,
-  BookOpen
+  BookOpen,
+  MessageCircle
 } from 'lucide-react'
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
               kinh nghiệm. Giúp hàng ngàn học sinh tự tin vượt qua khối lượng
               bài tập khổng lồ một cách nhẹ nhàng nhất.
             </p>
-            <div className="mt-4 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <Link
                 href="#khoa-hoc"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-indigo-600 px-8 text-base font-semibold text-white shadow-lg transition hover:bg-indigo-700 hover:shadow-indigo-500/25"
@@ -42,6 +43,20 @@ export default function Home() {
               >
                 <PlayCircle size={20} />
                 Học thử miễn phí
+              </Link>
+              <Link
+                href="https://zalo.me/0905690632"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#0068FF] px-8 text-base font-semibold text-white shadow-lg transition hover:bg-[#0054cc] hover:shadow-[#0068FF]/25"
+              >
+                <Image
+                  src="/Icon_of_Zalo.svg"
+                  alt="Zalo"
+                  width={20}
+                  height={20}
+                />
+                Liên hệ Zalo: 0905.690.632
               </Link>
             </div>
             <div className="mt-4 flex items-center gap-4 text-sm font-medium text-slate-500">
